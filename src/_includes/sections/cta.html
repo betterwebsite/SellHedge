@@ -1,32 +1,24 @@
 <!-- ============================================ -->
-<!--                     CTA                      -->
+<!--             Final Call to Action             -->
 <!-- ============================================ -->
 
-<section id="cta-51">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get It Done With Us Today</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
-            </p>
-            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
-        </div>
+<section id="cta">
+    <div class="container">
+        <h2 class="title">
+            Get It Done
+            <br/>
+            With Us Today
+        </h2>
+        <p>
+            Ready to take the next step? Let’s talk about how LawHedge can help you move forward with confidence.
+        </p>
+        <a href="/contact" class="cs-button-solid">Get in Contact Now</a>
     </div>
-    <!-- Background Image-->
-    <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
-        <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
-        <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
-        <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
-    </picture>
+    <picture>
+                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/41consulthero.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/41consulthero.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/41consulthero.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 95 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/41consulthero.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+
 </section>
