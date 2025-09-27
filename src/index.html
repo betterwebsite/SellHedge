@@ -59,7 +59,7 @@ Doing this will complete the overlapping "breaking the container" look.
             <p class="cs-text">At ExitHedge, you’ll work directly with an experienced advisor who understands the challenges of buying and selling businesses. With decades of insight guiding the process, I help you protect the value you’ve built and position your business for the best possible outcome-whether you’re ready to sell, purchase, or plan your next move.
             </p>
             <div class="cs-button-box">
-                <a href="/contact" class="cs-button-solid">Schedule An Appointment</a>
+                <a href="/contact" class="cs-button-solid" style="border-radius: 8px;">Schedule An Appointment</a>
                 <a href="tel:(405) 615-6361" class="cs-button-phone">
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-phone.svg" alt="phone icon" width="24" height="24">
@@ -98,90 +98,110 @@ Doing this will complete the overlapping "breaking the container" look.
 
 
 
-
-
-
 <!-- ============================================ -->
-<!--                    Hero                      -->
+<!--               Side By Side Pair              -->
 <!-- ============================================ -->
 
-<section id="hero-1250">
+<section id="sbs-2375">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">Connecting Buyers and Sellers around Oklahoma</h1>
-            <p class="cs-text">At ExitHedge, you’ll work directly with an experienced advisor who understands the challenges of buying and selling businesses. With decades of insight guiding the process, I help you protect the value you’ve built and position your business for the best possible outcome-whether you’re ready to sell, purchase, or plan your next move.
+            <span class="cs-topper">What We Do</span>
+            <h2 class="cs-title">Connecting Buyers and Sellers</h2>
+            <p class="cs-text">
+                ExitHedge specializes in facilitating successful business transactions by connecting qualified buyers with established sellers. Our comprehensive brokerage services ensure smooth transitions, fair valuations, and strategic deal structuring that benefits all parties involved.
             </p>
-            <a href="/contact" class="cs-button-solid">Get A Quote</a>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="/buisandreal" class="cs-link">
-                    <h3 class="cs-h3">The Selling Process</h3>
-                    <p class="cs-item-text">
-                        We’ve guided countless clients through smooth, secure business and real estate deals with confidence.
+        <div class="cs-wrapper">
+            <!--Side By Side-->
+            <div class="cs-flex">
+                <div class="cs-content2">
+                    <h3 class="cs-h3">Sell Your Business</h3>
+                    <p class="cs-text">
+                        We guide business owners through every step of the sale process, from initial valuation to closing, ensuring maximum value and optimal terms for your exit strategy.
                     </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgeservice11.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgeservice11.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgeservice11.jpg' | resize({ height: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img fetchpriority="high" loading="eager" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgeservice11.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="/estateplanning" class="cs-link">
-                    <h3 class="cs-h3">What is my Business Worth?</h3>
-                    <p class="cs-item-text">
-                        We connect individuals and families with trusted estate planning attorneys to help protect their legacy and loved ones with confidence.
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Professional business valuation and market analysis
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Confidential marketing to qualified buyers
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Deal negotiation and transaction management
+                        </li>
+                    </ul>
+                    <a href="https://lawhedge.com" class="cs-link">Learn More</a>
+                </div>
+                <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 640 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 640 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 640 }) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | jpeg %}" type="image/jpeg">
+                        <!--Large Tablet Image-->
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1000 }) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1500 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1500 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1500 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/sell_business.jpg" | resize({ width: 1500 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="lazy" decoding="async">
+                    </picture>
+            </div>
+            <!--SBS Reverse-->
+            <div class="cs-flex">
+                <div class="cs-content2">
+                    <h3 class="cs-h3">Buy a Business</h3>
+                    <p class="cs-text">
+                        Partner with ExitHedge to identify and acquire the perfect business opportunity that aligns with your investment goals and operational expertise.
                     </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ height: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img fetchpriority="high" loading="eager" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="/litigation" class="cs-link">
-                    <h3 class="cs-h3">Litigation</h3>
-                    <p class="cs-item-text">
-                        We connect you with trusted litigation experts through our referral network to ensure your legal disputes are handled with experience and care.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgeservice3.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgeservice3.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgeservice3.jpg' | resize({ height: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgeservice3.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="/project-one" class="cs-link">
-                    <h3 class="cs-h3">Escrow, Transaction Coordination, and Closing</h3>
-                    <p class="cs-item-text">
-                        We provide reliable esEscrow, Transaction Coordination, and Closing support to ensure your transactions finish smoothly and securely.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgeservice4.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgeservice4.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgeservice4.jpg' | resize({ height: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgeservice4.jpg' | resize({ height: 1000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
-            </li>
-        </ul>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Access to exclusive off-market opportunities
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Due diligence coordination and support
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="24" height="24">
+                            Financing assistance and closing facilitation
+                        </li>
+                    </ul>
+                    <a href="https://lawhedge.com" class="cs-link">Get Started</a>
+                </div>
+                <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 640 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 640 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 640 }) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | jpeg %}" type="image/jpeg">
+                        <!--Large Tablet Image-->
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1000 }) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1500 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1500 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1500 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/buy_business.jpg" | resize({ width: 1500 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="lazy" decoding="async">
+                    </picture>
+            </div>
+        </div>
     </div>
-
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/41consulthero.jpg' | resize({ width: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/41consulthero.jpg' | resize({ width: 1000, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/41consulthero.jpg' | resize({ width: 300 }) | webp({ quality: 65 }) %}">
-                    <img fetchpriority="high" loading="eager" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/41consulthero.jpg' | resize({ width: 1000, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
 </section>
-
+                                
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
@@ -191,12 +211,12 @@ Doing this will complete the overlapping "breaking the container" look.
     <div class="cs-container">
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/svgs/logo-blackMini.svg' | resize({ width: 400, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/svgs/logo-blackMini.svg' | resize({ width: 400, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/svgs/logo-blackMini.svg' | resize({ width: 200, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/svgs/logo-blackMini.svg' | resize({ width: 400, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
                 </picture>
-            <a href="/about" class="cs-button-solid">Read More</a>
+            <a href="/about" class="cs-button-solid" style="border-radius: 8px;">Read More</a>
         </div>
         <div class="cs-content">
             <div class="cs-header">
@@ -212,7 +232,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <span class="cs-name">Jim Bickford</span>
                     <span class="cs-desc">Attorney at Law</span>
                     <!--if you change this button class name, change the class name to rename it as well in the css at small desktop media query-->
-                    <a href="" class="cs-button-solid">Get Started Today</a>
+                    <a href="/contact" class="cs-button-solid" style="border-radius: 8px;">Get Started Today</a>
                 </div>
                 <picture class="cs-picture cs-picture1">
                     <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 400, position: 'bottom' }) | webp %}">
@@ -225,46 +245,123 @@ Doing this will complete the overlapping "breaking the container" look.
     </div>
 </section>
 
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1252">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Expert Business Brokerage Services</h2>
+            </div>
+            <p class="cs-text">
+                At ExitHedge, we provide comprehensive business brokerage services to help owners successfully exit their businesses and connect qualified buyers with profitable opportunities. Our proven strategies and market expertise ensure optimal outcomes for every transaction.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/selling-service" class="cs-link">
+                    <h3 class="cs-h3">The Selling Process</h3>
+                    <p class="cs-item-text">
+                        Navigate your business sale with confidence
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/business-valuation" class="cs-link">
+                    <h3 class="cs-h3">What is My Business Worth?</h3>
+                    <p class="cs-item-text">
+                        Get an accurate valuation
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgeservice2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/finding-broker" class="cs-link">
+                    <h3 class="cs-h3">Finding a Business Broker</h3>
+                    <p class="cs-item-text">
+                        Why ExitHedge is the right partner for you
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhedgehands.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhedgehands.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhedgehands.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhedgehands.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/business-grow" class="cs-link">
+                    <h3 class="cs-h3">Grow Your Business Value</h3>
+                    <p class="cs-item-text">
+                        Strategic guidance to enhance your business
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/lawhwdgwsunset.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/lawhwdgwsunset.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lawhwdgwsunset.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/lawhwdgwsunset.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>                            
+
+
+
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
-
 <section id="sbs-2362">
     <div class="cs-container">
         <div class="cs-wrapper">
             <div class="cs-content">
-                <span class="cs-topper">Why Choose Us</span>
-                <h2 class="cs-title">Strategic Legal Support You Can Count On</h2>
+                <span class="cs-topper">Why Choose ExitHedge</span>
+                <h2 class="cs-title">Trusted Business Brokerage Excellence</h2>
                 <p class="cs-text">
-                    At LawHedge, clients don’t just come to us because we’ve closed countless deals — they come back because they trust us. When legal questions arise, they know we bring more than just experience to the table. We offer sound judgment, strategic insight, and a practical understanding of what it takes to protect their interests.
+                    At ExitHedge, business owners and buyers choose us because we deliver results that matter. With our deep market knowledge and extensive network of qualified buyers and sellers, we've successfully facilitated hundreds of business transitions. Our clients return to us and refer others because they know we bring integrity, expertise, and a commitment to maximizing value in every transaction.
                 </p>
                 <p class="cs-text">
-                    With over 15 years as a licensed attorney, I bring a sophisticated, deal-savvy perspective to every matter, and because LawHedge operates as a lean, focused firm, you get high-level service without high overhead. That means clear communication, quick response times, and results that speak for themselves.
+                    Backed by the legal expertise of LawHedge, we offer a unique advantage in the business brokerage space. Our integrated approach combines strategic business insights with sophisticated legal support, ensuring seamless transactions from initial valuation through closing. This dual expertise means fewer surprises, smoother negotiations, and better outcomes for all parties involved.
                 </p>
-                <a href="/contact" class="cs-button-solid">Contact Us</a>
+                <a href="https://lawhedge.com/contact" class="cs-button-solid">Start Your Exit Strategy</a>
             </div>
             <ul class="cs-stat-group">
                 <li class="cs-stat">
-                    <span class="cs-number"><span class="cs-color">+</span>200</span>
-                    <span class="cs-desc">Deals  Closed</span>
+                    <span class="cs-number">$<span class="cs-color">50M</span>+</span>
+                    <span class="cs-desc">Transaction Value</span>
                 </li>
                 <li class="cs-stat">
-                    <span class="cs-number"><span class="cs-color">+</span>15</span>
-                    <span class="cs-desc">Years of Experience</span>
+                    <span class="cs-number"><span class="cs-color">95</span>%</span>
+                    <span class="cs-desc">Success Rate</span>
                 </li>
             </ul>
         </div>
         <div class="cs-image-group">
             <picture class="cs-picture">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/Jimbickwhychooseus.jpg' | resize({ width: 300 }) | webp({ quality: 55 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/Jimbickwhychooseus.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/whychooseus2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/whychooseus2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/whychooseus2.jpg' | resize({ width: 300 }) | webp({ quality: 55 }) %}">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/whychooseus2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="business broker consultation" width="275" height="132">
                 </picture>
            
         </div>
     </div>
 </section>
 
-    {% include 'sections/cta.html' %}
 {% endblock %}

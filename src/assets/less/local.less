@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-2276 {
         padding:clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-        padding-top: 40rem;
+        padding-top: 0;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -153,7 +153,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #sbs-2276 {
-        padding-top: 12rem;
+        padding-top: 0;
         .cs-container {
             max-width: (1280/16rem);
         }
@@ -196,7 +196,7 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs-2276 {
-        padding-top: 15rem;
+        padding-top: 0;
         .cs-container {
             flex-direction: row;
             align-items: stretch;
@@ -691,4 +691,490 @@
                                 
 
                                 
+                                
+
+
+
+/*-- -------------------------- -->
+<---     Side By SIde Pair      -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    #sbs-2375 {
+        padding: var(--sectionPadding);
+        padding-top: 0;
+        background-color: #FBF9F5;
+        box-sizing: border-box;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            /* 32px - 100px top & bottom */
+            /* 16px - 32px left & right */
+            padding: clamp(2rem, 8vw, 6.25rem) clamp(1rem, 3vw, 4rem);
+            background-color: #fff;
+            border-radius: (16/16rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 40px - 48px */
+            gap: clamp(2.5rem, 5vw, 3rem);
+        }
+
+        .cs-wrapper {
+            display: flex;
+            flex-direction: column;
+            /* 16px - 20px */
+            gap: clamp(1rem, 2.3vw, 1.25rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-text {
+            max-width: (992/16rem);
+        }
+
+        .cs-content2 {
+            .cs-text {
+                margin-bottom: (16/16rem);
+
+                &:last-of-type {
+                    margin-bottom: (32/16rem);
+                }
+            }
+        }
+
+        .cs-flex {
+            width: 100%;
+            /* 24px - 32px top & bottom */
+            /* 16px - 32px left & right */
+            padding: clamp(1.5rem, 4vw, 2rem) clamp(1rem, 3vw, 2rem);
+            box-sizing: border-box;
+            background-color: #FBF9F5;
+            border-radius: (16/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 16px - 32px */
+            gap: clamp(1rem, 4vw, 2rem);
+        }
+
+        .cs-h3 {
+            font-size: (25/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            /* 16px - 32px */
+            margin: 0 0 clamp(1rem, 3vw, 2rem);
+            padding-bottom: (32/16rem);
+            border-bottom: 1px solid #D2D8DF;
+            color: var(--headerColor);
+        }
+
+        .cs-ul {
+            width: 100%;
+            margin: 0 0 (32/16rem);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: (12/16rem);
+        }
+
+        .cs-li {
+            font-size: var(--bodyFontSize);
+            list-style: none;
+            line-height: 1.5em;
+            width: 100%;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+            align-items: flex-start;
+            gap: (8/16rem);
+        }
+
+        .cs-icon {
+            width: (19/16rem);
+            height: auto;
+            /* adds extra space between the icon and top of parent so it's more centered */
+            margin-top: 3px;
+            display: block;
+            flex: none;
+        }
+
+        .cs-link {
+            font-size: var(--bodyFontSize);
+            text-decoration: none;
+            line-height: 1.5em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--secondary);
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: currentColor;
+                opacity: 1;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: 75vw;
+            max-height: (350/16rem);
+            border-radius: (16/16rem);
+            /* clips the border radius of the image */
+            overflow: hidden;
+            display: block;
+            order: -1;
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        } 
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-2375 {
+        .cs-flex {
+            flex-direction: row;
+            align-items: stretch;
+
+            &:nth-child(even) {
+                .cs-picture {
+                    order: -1;
+                }
+            }
+        }
+
+        .cs-h3 {
+            /* 108px - 142px */
+            min-height: clamp(6.75rem, 12vw, 8.875rem);
+        }
+
+        .cs-picture {
+            width: 70vw;
+            max-width: (528/16rem);
+            height: auto;
+            max-height: 100%;
+            order: 2;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode {
+        #sbs-2375 {
+            background-color: rgba(0, 0, 0, .2);
+
+            .cs-container {
+                background-color: rgba(0, 0, 0, .3);
+            }
+
+            .cs-flex {
+                background-color: var(--dark);
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                    opacity: .2;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            .cs-h3 {
+                border-color: rgba(255, 255, 255, .2);
+            }
+
+            .cs-h3, .cs-li {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
+                                
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-1252 {
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 10;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-card-group {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* 16px - 20px */
+            gap: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .cs-item {
+            width: 100%;
+            text-align: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            border-radius: (8/16rem);
+            /* clips background image corners */
+            overflow: hidden;
+            box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            grid-column: span 12;
+            grid-row: span 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+
+            &:hover {
+                .cs-item-background {
+                    img {
+                        opacity: 0.4;
+                        transform: scale(1.3);
+                    }
+                }
+
+                .cs-h3 {
+                    color: var(--primary);
+                }
+            }
+
+            &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                /* prevents border from affecting height and width */
+                box-sizing: border-box;
+                border-radius: (8/16rem);
+                /* prevents the mouse from interacting with it so when you hover hover the other elements inside the card it doesn't block your mouse from hovering over them */
+                pointer-events: none;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+        }
+
+        .cs-link {
+            text-decoration: none;
+            /* 125px - 236px */
+            /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+            padding: clamp(7.8125rem, 19vw, 14.75rem) (24/16rem) (24/16rem);
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            line-height: 1.2em;
+            font-weight: bold;
+            text-align: inherit;
+            margin: 0 0 (12/16rem) 0;
+            color: var(--bodyTextColorWhite);
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            max-width: (450/16rem);
+            margin: 0;
+            padding: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-item-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #1a1a1a;
+                opacity: 0.24;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            &:after {
+                /* background color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: -moz-linear-gradient(
+                    top,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 1) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 1) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 1) 100%
+                );
+                opacity: 0.4;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+                transition:
+                    transform 0.6s,
+                    opacity 0.3s;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-1252 {
+        padding-bottom: 0;
+
+        .cs-content {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: (48/16rem);
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-flex-group {
+            width: 50%;
+        }
+
+        .cs-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-1252 {
+        .cs-item {
+            grid-column: span 3;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-1252 {
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
                                 
