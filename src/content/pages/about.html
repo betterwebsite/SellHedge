@@ -1,5 +1,5 @@
 ---
-title: "About | Code Stitch Web Designs"
+title: "About | ExitHedge"
 description: "Meta description for the page"
 permalink: "/about/"
 ---
@@ -12,7 +12,72 @@ permalink: "/about/"
 {% endblock %}
 
 {% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
+<div id="banner-310">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/about" class="cs-link cs-active">About Us</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/project-one/banner2.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/project-one/banner2.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/project-one/banner2.jpg" alt="library" width="1920" height="375">
+    </picture>
+</div>
+
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-311">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/lawhedgenatureUntitleddesign-5.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/lawhedgenatureUntitleddesign-5.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/lawhedgenatureUntitleddesign-5.jpg' | resize({ width: 600, position: 'bottom' }) | webp({ quality: 95 }) %}">
+                    <img fetchpriority="high" loading="eager" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/lawhedgenatureUntitleddesign-5.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            <picture class="cs-picture cs-picture2">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
+                    <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 600, position: 'bottom' }) | webp({ quality: 95 }) %}">
+                    <img fetchpriority="high" loading="eager" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                </picture>
+            <!-- <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/jimbick2.jpg?updatedAt=1748719683828">
+                <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/jimbick2.jpg?updatedAt=1748719683828">
+                <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/jimbick2.jpg?updatedAt=1748719683828" alt="gavel" width="414" height="400" aria-hidden="true">
+            </picture> -->
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">LawHedge</h2>
+            <p class="cs-text">
+                I’m a business-minded attorney who cares about getting deals done for clients. I believe that honesty and effective communication are the foundations for a successful law firm.  My practice focuses on buying and selling businesses and real estate.  But I strive to be a resource for <strong>all legal matters,</strong> so if you have a legal question (estate planning, litigation, etc.), come to me; if I can’t help directly, I’ll put you in touch with someone who can. 
+            </p>
+            <div class="cs-quote">
+                <span class="cs-quote-text">
+                    
+                </span>
+                <span class="cs-name">Education:</span>
+                <span class="cs-job">Georgetown Law, 2008<br>
+                    University of Oklahoma, 2005</span>
+                
+            </div>
+    </div>
+</section>
+             
     
 
     {% include 'sections/cta.html' %}
