@@ -1,5 +1,5 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
+    name: "ExitHedge",
     email: "jim@lawhedge.com",
     phoneForTel: "405-615-6361",
     phoneFormatted: "(405) 615-6361",
