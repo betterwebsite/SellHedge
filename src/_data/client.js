@@ -1,6 +1,6 @@
 module.exports = {
     name: "ExitHedge",
-    email: "jim@lawhedge.com",
+    email: "jim@ExitHedge.com",
     phoneForTel: "405-615-6361",
     phoneFormatted: "(405) 615-6361",
     address: {

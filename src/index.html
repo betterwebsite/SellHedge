@@ -28,6 +28,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% endblock %}
 
 {% block body %}
+
+
 <!-- Usage Notes:
 We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
 
@@ -42,32 +44,32 @@ Doing this will complete the overlapping "breaking the container" look.
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1250">
+<section id="hero-1249">
     <div class="cs-container">
         <div class="cs-content">
             <h1 class="cs-title">Looking To Sell  Your Oklahoma Business?</h1>
             <p class="cs-text">
                 ExitHedge has created a clear and straightforward approach to selling businesses, making the process easier to understand and navigate.
             </p>
-            <a href="/contact" class="cs-button-solid">Get A Quote</a>
+            <a href="" class="cs-button-solid">Get A Quote</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <a href="/project-one" class="cs-link">
                     <h3 class="cs-h3">The Selling Process</h3>
                     <p class="cs-item-text">
-                       Navigate your business sale with confidence, backed by expert guidance.
+                        Navigate your business sale with confidence, backed by expert guidance.
                     </p>
                 </a>
                 <picture class="cs-item-background">
                     <source media="(max-width: 600px)" srcset="/assets/images/Jimbickwhychooseus.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/Jimbickwhychooseus.jpg">
-                    <img decoding="async" src="/assets/images/Jimbickwhychooseus.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                    <img decoding="async" src="/assets/images/Jimbickwhychooseus.jpg" alt="The Selling Process" width="413" height="374" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
                 <a href="/project-two" class="cs-link">
-                    <h3 class="cs-h3">What is My Business Worth</h3>
+                    <h3 class="cs-h3">What is My Business Worth?</h3>
                     <p class="cs-item-text">
                         Get an accurate valuation and start your exit strategy with confidence.
                     </p>
@@ -75,32 +77,20 @@ Doing this will complete the overlapping "breaking the container" look.
                 <picture class="cs-item-background">
                     <source media="(max-width: 600px)" srcset="/assets/images/home-page/business-worth.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/home-page/business-worth.jpg">
-                    <img decoding="async" src="/assets/images/home-page/business-worth.jpg" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Buisness Valuation Calculator</h3>
-                    <p class="cs-item-text">This valuation calculator gives business owners an estimate of what their company could sell for on the open market.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="/assets/images/home-page/Calculator.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/home-page/Calculator.jpg">
-                    <img decoding="async" src="/assets/images/home-page/Calculator.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                    <img decoding="async" src="/assets/images/home-page/business-worth.jpg" alt="What is My Business Worth" width="413" height="374" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
                 <a href="/finding-broker" class="cs-link">
                     <h3 class="cs-h3">Finding A Business Broker</h3>
                     <p class="cs-item-text">
-                        Why ExitHedge is the right partner for you.
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
                     </p>
                 </a>
                 <picture class="cs-item-background">
                     <source media="(max-width: 600px)" srcset="/assets/images/home-page/broker.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/home-page/broker.jpg">
-                    <img decoding="async" src="/assets/images/home-page/broker.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                    <img decoding="async" src="/assets/images/home-page/broker.jpg" alt="Finding A Business Broker" width="413" height="374" aria-hidden="true">
                 </picture>
             </li>
         </ul>
@@ -110,9 +100,13 @@ Doing this will complete the overlapping "breaking the container" look.
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="/assets/images/home-page/hero-exit.jpg">
         <source media="(min-width: 601px)" srcset="/assets/images/home-page/hero-exit.jpg">
-        <img decoding="async" src="/assets/images/home-page/hero-exit.jpg" alt="construction" width="2250" height="1500" aria-hidden="true">
+        <img decoding="async" src="/assets/images/home-page/hero-exit.jpg" alt="Home Page" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
+                                
+
+
+
 
 
 <!-- ============================================ -->
@@ -126,7 +120,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}">
                     <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/exithedge.png' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="ExitHedge" width="275" height="132">
                 </picture>
             <a href="/about" class="cs-button-solid" style="border-radius: 8px;">Read More</a>
         </div>
@@ -138,11 +132,11 @@ Doing this will complete the overlapping "breaking the container" look.
             <div class="cs-wrapper">
                 <div class="cs-flex">
                     <p class="cs-text">
-                        I’m a business-minded attorney who cares about getting deals done for clients.  I believe that honesty and effective communication are the foundations for a successful law firm.  My practice focuses on buying and selling businesses and real estate.  But I strive to be a resource for all legal matters, so if you have a legal question (estate planning, litigation, etc.), come to me; if I can’t help directly, I’ll put you in touch with someone who can. 
+                        ExitHedge is built around one goal-helping business owners sell with confidence. I take a deal-driven approach, focused on getting transactions done while protecting your interests. Honesty and clear communication are the foundation of how I work, so you always know where you stand. My practice centers on guiding clients through the process of selling a business, from valuation to closing, making the transition as smooth and straightforward as possible.
                     </p>
                     
                     <span class="cs-name">Jim Bickford</span>
-                    <span class="cs-desc">Attorney at Law</span>
+                    <span class="cs-desc"> </span>
                     <!--if you change this button class name, change the class name to rename it as well in the css at small desktop media query-->
                     <a href="/contact" class="cs-button-solid" style="border-radius: 8px;">Get Started Today</a>
                 </div>
@@ -150,7 +144,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <source media="(min-width: 1024px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 400, position: 'bottom' }) | webp %}">
                     <source media="(min-width: 601px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 400, position: 'bottom' }) | webp %}">
                     <source media="(max-width: 600px)" srcset="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 350, position: 'bottom' }) | webp({ quality: 65 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 400, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
+                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl 'assets/images/jimbick2.jpg' | resize({ width: 400, position: 'bottom' }) | webp %}" alt="Jim Bickford" width="275" height="132">
                 </picture>
             </div>
         </div>
@@ -183,7 +177,7 @@ Doing this will complete the overlapping "breaking the container" look.
                 <ul class="cs-ul">
                     <li class="cs-li"><strong>Experience:</strong> In-depth knowledge of business sales, contracts, and negotiations.</li>
                     <li class="cs-li"><strong>Protection:</strong> Safeguarding your interests throughout every stage of the transaction.</li>
-                    <li class="cs-li"><strong>Clarity:</strong> Explaining complex legal details in a straightforward, practical way.</li>
+                    <li class="cs-li"><strong>Clarity:</strong> Explaining complex details in a straightforward, practical way.</li>
                     <li class="cs-li"><strong>Results:</strong> Structuring deals to maximize value and ensure a smooth closing.</li>
                 </ul>
                 <div class="cs-button-box">
@@ -201,7 +195,7 @@ Doing this will complete the overlapping "breaking the container" look.
             </picture>
             <div class="cs-wrapper cs-wrapper2">
                 <p class="cs-text">
-                    ExitHedge provides strategic guidance for business owners preparing to sell. With years of specialized experience, I focus on creating clear, effective solutions that protect your interests and maximize value in the sale process.
+                    ExitHedge provides strategic guidance for business owners preparing to sell. With years of specialized experience, ExitHedge focuses on creating clear, effective solutions that protect your interests and maximize value in the sale process.
                 </p>
                 <a class="cs-button-solid" href="/project-one">Learn The Selling Process</a>
             </div>
@@ -241,21 +235,10 @@ Doing this will complete the overlapping "breaking the container" look.
                 <p class="cs-text">
                     At ExitHedge, business owners and buyers choose us because we deliver results that matter. With our deep market knowledge and extensive network of qualified buyers and sellers, we've successfully facilitated hundreds of business transitions. Our clients return to us and refer others because they know we bring integrity, expertise, and a commitment to maximizing value in every transaction.
                 </p>
-                <p class="cs-text">
-                    Backed by the legal expertise of LawHedge, we offer a unique advantage in the business brokerage space. Our integrated approach combines strategic business insights with sophisticated legal support, ensuring seamless transactions from initial valuation through closing. This dual expertise means fewer surprises, smoother negotiations, and better outcomes for all parties involved.
-                </p>
+               
                 <a href="/contact" class="cs-button-solid">Start Your Exit Strategy</a>
             </div>
-            <ul class="cs-stat-group">
-                <li class="cs-stat">
-                    <span class="cs-number">$<span class="cs-color">50M</span>+</span>
-                    <span class="cs-desc">Transaction Value</span>
-                </li>
-                <li class="cs-stat">
-                    <span class="cs-number"><span class="cs-color">95</span>%</span>
-                    <span class="cs-desc">Success Rate</span>
-                </li>
-            </ul>
+           
         </div>
         <div class="cs-image-group">
             <picture class="cs-picture">
@@ -314,20 +297,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/home-page/business-worth.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
                 </picture>
             </li>
-            <li class="cs-item">
-                <a href="/finding-broker" class="cs-link">
-                    <h3 class="cs-h3">Buisness Valuation Calculator</h3>
-                    <p class="cs-item-text">
-                        This valuation calculator gives business owners an estimate of what their company could sell for on the open market.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/home-page/Calculator.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/home-page/Calculator.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/home-page/Calculator.jpg' | resize({ width: 800, position: 'bottom' }) | webp({ quality: 45 }) %}">
-                    <img loading="lazy" aria-hidden="true"  decoding="async" src="{% getUrl '/assets/images/home-page/Calculator.jpg' | resize({ width: 800, position: 'bottom' }) | webp %}" alt="meeting" width="275" height="132">
-                </picture>
-            </li>
+         
             <li class="cs-item">
                 <a href="/finding-broker" class="cs-link">
                     <h3 class="cs-h3">Finding A Business Broker</h3>
