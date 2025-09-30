@@ -1,6 +1,6 @@
 ---
 title: "Contact | ExitHedge"
-description: "Meta description for the page"
+description: "Get in touch with ExitHedge, your trusted business broker. Fill out our contact form or reach us via email or phone for expert assistance in selling your business."
 permalink: "/contact/"
 ---
 
@@ -38,7 +38,7 @@ permalink: "/contact/"
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post" netlify>
+            <form id="cs-form" name="Contact Form" method="post" data-netlify="true" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
@@ -46,6 +46,11 @@ permalink: "/contact/"
                         Whether you’re preparing to sell, exploring your options, or simply want to learn more about the process, I’m here to help. Fill out the form below and I’ll get back to you promptly.
                     </p>
                 </div>
+                <p style="display: none;">
+                    <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                    </label>
+                </p>
                 <label>
                     Name
                     <input required type="text" id="name" name="name" placeholder="Name">
@@ -66,6 +71,7 @@ permalink: "/contact/"
                     Message
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
+                <div data-netlify-recaptcha="true"></div>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
             <div class="cs-right-section">

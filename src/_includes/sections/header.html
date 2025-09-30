@@ -47,27 +47,27 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="/" class="cs-li-link cs-active">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
                             Home
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="/about" class="cs-li-link">
+                        <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
                             About
                         </a>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
+                        <span class="cs-li-link {{ 'cs-active' if 'selling-process' == page.fileSlug }}{{ 'cs-active' if 'business-valuation' == page.fileSlug }}{{ 'cs-active' if 'finding-broker' == page.fileSlug }}">
                             Services
                             <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="/project-one" class="cs-li-link cs-drop-link">The Selling Process</a>
+                                <a href="/selling-process" class="cs-li-link cs-drop-link">The Selling Process</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/project-two" class="cs-li-link cs-drop-link">Business Valuation</a>
+                                <a href="/business-valuation" class="cs-li-link cs-drop-link">Business Valuation</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/finding-broker" class="cs-li-link cs-drop-link">Finding A Business Broker</a>
